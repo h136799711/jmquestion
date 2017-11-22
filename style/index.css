@@ -1,0 +1,78 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+div#big{
+	width:1087px;
+	height:502px;
+	padding-top:267px;
+	padding-left:353px;
+	margin:0px auto;
+	margin:0px auto;
+	background:url(../images/login_bg.jpg) no-repeat left top;
+}
+div#login{
+	height:250px;
+	width:735px;
+}
+div#login_left{
+	float:left;
+	width:330px;
+	height:150px;
+	font-weight:bold;
+	color:#666;
+	line-height:150%;
+	padding:50px 10px;
+}
+div#login_left marquee{
+	width:330px;
+	height:150px;
+}
+div#login_right{
+	float:left;
+	width:380px;
+	height:250px;
+}
+div#login_right h1{
+	text-align:center;
+	font-size:20px;
+	padding:10px 0px;
+}
+div#login_right ul{
+	list-style-type:none;
+}
+div#login_right ul li{
+	padding:5px 0px;
+	font-size:14px;
+	text-indent:2em;
+}
+div#login_right select.select{
+	width:150px;
+	height:25px;
+	line-height:25px;
+}
+div#login_right input.text{
+	width:250px;
+	height:25px;
+	line-height:25px;
+}
+div#login_right img{
+	cursor:pointer;
+}
+
+div#login_right ul li.ali{
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
