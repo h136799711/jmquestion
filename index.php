@@ -1,4 +1,7 @@
 <?php
+    if (version_compare(phpversion(), "5.5") > 0) {
+        die("PHP版本不能超过5.5, 当前版本".phpversion());
+    }
 	session_start();
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -13,7 +16,7 @@
 <div id="big">
 	<?php
 		require 'includes/mysql_connect.php';
-				require 'includes/fun.php';
+        require 'includes/fun.php';
 		if(isset($_GET['sent'])){
 			$sent = $_GET['sent'];
 		}else{

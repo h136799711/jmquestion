@@ -1,6 +1,6 @@
 <?php
 	function _page($_sql,$_size) {
-		//½«ÀïÃæµÄËùÓÐ±äÁ¿È¡³öÀ´£¬Íâ²¿¿ÉÒÔ·ÃÎÊ
+		//å°†é‡Œé¢çš„æ‰€æœ‰å˜é‡å–å‡ºæ¥ï¼Œå¤–éƒ¨å¯ä»¥è®¿é—®
 		global $_page,$_pagesize,$_pagenum,$_pageabsolute,$_num;
 		if(isset($_GET['page']) || isset($_POST['page'])){
 		
@@ -40,11 +40,11 @@
 	
 	
 	
-	//´´½¨Ò»¸ö×Ô¶¯×ªÒå×´Ì¬µÄ³£Á¿
+	//åˆ›å»ºä¸€ä¸ªè‡ªåŠ¨è½¬ä¹‰çŠ¶æ€çš„å¸¸é‡
 	define('GPC',get_magic_quotes_gpc());
 
 	function _mysql_string($_string) {
-		//get_magic_quotes_gpc()Èç¹û¿ªÆô×´Ì¬£¬ÄÇÃ´¾Í²»ÐèÒª×ªÒå
+		//get_magic_quotes_gpc()å¦‚æžœå¼€å¯çŠ¶æ€ï¼Œé‚£ä¹ˆå°±ä¸éœ€è¦è½¬ä¹‰
 		if (!GPC) {
 			return mysql_real_escape_string($_string);
 		} 
